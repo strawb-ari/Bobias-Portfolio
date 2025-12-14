@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bobias Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <svg class="cat-logo" viewBox="0 0 100 100">
+                    <circle cx="50" cy="55" r="35" fill="white"/>
+                    <path d="M 30 30 Q 35 15 40 30" fill="white" stroke="white" stroke-width="2"/>
+                    <path d="M 60 30 Q 65 15 70 30" fill="white" stroke="white" stroke-width="2"/>
+                    <circle cx="40" cy="50" r="3" fill="#FF69B4"/>
+                    <circle cx="60" cy="50" r="3" fill="#FF69B4"/>
+                    <path d="M 35 60 Q 50 65 65 60" stroke="#FF69B4" stroke-width="2" fill="none"/>
+                    <line x1="25" y1="55" x2="15" y2="50" stroke="#FF69B4" stroke-width="2"/>
+                    <line x1="25" y1="60" x2="15" y2="60" stroke="#FF69B4" stroke-width="2"/>
+                    <line x1="25" y1="65" x2="15" y2="70" stroke="#FF69B4" stroke-width="2"/>
+                </svg>
+                <span class="logo-text">arianne</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-subtitle">IT Student | Arianne Grace O. Bobias</p>
+                <p class="hero-description">I'm a passionate IT student from Bulacan State University currently seeking an On-the-Job Training (OJT) opportunity to gain real-world experience.
+                    I love creating beautiful, functional websites and I'm eager to learn about UI/UX Design. 
+                    After gaining brief experience with automation tools, I also developed an interest in exploring this field further.</p>
+            </div>
+            <div class="hero-image">
+                <img src="profile.jpg" alt="Arianne's Profile" class="profile-img">
+            </div>
+        </div>
+        <div class="floating-cats">
+            <div class="floating-cat cat-1">🐱</div>
+            <div class="floating-cat cat-2">😺</div>
+            <div class="floating-cat cat-3">😸</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-simple">
+                <p>I'm an IT student with a passion for web development and design. Throughout my studies, I've gained hands-on experience with HTML, CSS, JavaScript, Python, Unity, Figma, Adobe Photoshop / Animations. I'm now looking for an OJT opportunity where I can learn from experienced professionals and contribute to real-world projects.</p>
+                
+                <div class="skills-list">
+                    <span class="skill-tag">HTML/CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Unity</span>
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Adobe</span>
+                    <span class="skill-tag">Selenium / Katalon</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card" onclick="openModal('1c.jpg', '1C\'s Chicken House - C++ Ordering System')">
+                    <div class="project-image">
+                        <img src="1c.jpg" alt="1C's Chicken House" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3>1C's Chicken House - C++ Ordering System</h3>
+                        <p>Interactive console-based restaurant ordering system with menu display, order validation, and transaction processing</p>
+                        <div class="project-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">OOP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card" onclick="openModal('water-billing.jpg', 'Alkanal Water District - Water Billing System using JAVA')">
+                    <div class="project-image">
+                        <img src="water-billing.jpg" alt="Alkanal Water District Billing System" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3>Alkanal Water District - Java Billing System</h3>
+                        <p>Water billing and cashier transaction system with account management, payment processing, and receipt printing</p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Netbeans</span>
+                            <span class="tag">Database</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card" onclick="openModal('pos.jpg', 'Kape Avenue POS in Admin - POS')">
+                    <div class="project-image">
+                        <img src="pos.jpg" alt="Kape Avenue POS in Admin" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3>Kape Avenue POS in Admin - POS</h3>
+                        <p>This is a point-of-sale system designed for efficient transaction management and inventory control.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card" onclick="openModal('kape avenue.mp4', 'Kape Avenue - Customer Landing Page')">
+                    <div class="project-image">
+                        <video class="project-img" muted loop autoplay>
+                            <source src="kape avenue.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Kape Avenue - Customer Landing Page</h3>
+                        <p>Interactive coffee shop landing page with menu browsing and online ordering features</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="project-card" onclick="openModal('exide.mp4', 'Pastry E-Commerce Website - Exide Bakery')">
+                    <div class="project-image">
+                        <video class="project-img" muted loop autoplay>
+                            <source src="exide.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pastry E-Commerce Website - Exide Bakery</h3>
+                        <p>This is an online platform for ordering delicious pastries with focusing on filtering.</p>
+                        <div class="project-tags">
+                            <span class="tag">XQM</span>
+                            <span class="tag">XML</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">eXide</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="project-card" onclick="openModal('funeral.mp4', 'Funeral Website using Exide')">
+                    <div class="project-image">
+                        <video class="project-img" muted loop autoplay>
+                            <source src="funeral.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Funeral Website using Exide</h3>
+                        <p>This is an online platform from a Funeral in Pampanga. This was also focus on filtering and managing funeral services.</p>
+                        <div class="project-tags">
+                            <span class="tag">XQM</span>
+                            <span class="tag">XML</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">eXide</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal('streetease.png', 'Streetease Clothing Website - Python & Django')">
+                    <div class="project-image">
+                        <div class="project-image">
+                            <img src="streetease.png" alt="Streetease Clothing Website" class="project-img">
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Streetease Clothing Website - Python & Django</h3>
+                        <p>This is a website for Streetease Clothing built using Python and Django.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal('velvet.mp4', 'Velvet Rouge Cosmetic Website - Python & Django')">
+                    <div class="project-image">
+                        <video class="project-img" muted loop autoplay>
+                            <source src="velvet.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Velvet Rouge Cosmetic Website - Python & Django</h3>
+                        <p>This is a website for Velvet Rouge Cosmetic built using Python and Django.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal('homepage.mp4', 'RHU Website')">
+                    <div class="project-image">
+                        <video class="project-img" muted loop autoplay>
+                            <source src="homepage.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>RHU Website</h3>
+                        <p>This is a website for RHU built using HTML, CSS, JavaScript & PHP.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">Hostinger</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal('adventure.mp4', 'Adventure Mobile Game - Unity & C#')">
+                    <div class="project-image">
+                        <video class="project-img" muted loop autoplay>
+                            <source src="adventure.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Adventure Mobile Game - Unity & C#</h3>
+                        <p>This is a mobile game developed using Unity and C#.</p>
+                        <div class="project-tags">
+                            <span class="tag">UNITY</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">Animation</span>
+                            <span class="tag">Mobile Game</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in hearing about new projects and opportunities.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>ariannegracebobias@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span>+639944884782</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>Bustos, Bulacan, Philippines</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Portfolio ni Arianne 💖</p>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal" onclick="closeModal()">
+        <span class="modal-close">&times;</span>
+        <div class="modal-content-wrapper" onclick="event.stopPropagation()">
+            <img class="modal-image" id="modalImg" alt="Project Image">
+            <video class="modal-image" id="modalVideo" controls style="display:none;">
+                <source id="modalVideoSource" type="video/mp4">
+            </video>
+            <div class="modal-title" id="modalTitle"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
